@@ -3,37 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="stylee.css">
-    <title>Tienda de celulares</title>
+    <link rel="icon" href="./assets/img/favicom3.png" type="image/png">
+    <title>Dispositivos tecnológicos</title>
 </head>
 <body>
     <header>
-        <h1>Móviles</h1>
+        <h1>DISPOSITIVOS TECNOLÓGICOS</h1>
     </header>
     <section class="contenedor">
         <div class="contenedor-items">
             <div class="item">
-                <span class="título-item">Samsung Galaxy s20</span>
+                <span class="título-item">Samsung Galaxy S20</span>
                 <img src="./assets/img/samsungs20.jpg" alt="" class="img-item">
                 <span class="precio-item">$125.000</span>
                 <button class="boton-item">Agregar al carrito</button>
             </div>
             <div class="item">
-                <span class="título-item">Samsung Galaxy s21</span>
+                <span class="título-item">Samsung Galaxy S21</span>
                 <img src="./assets/img/samsungs21.jpg" alt="" class="img-item">
                 <span class="precio-item">$135.000</span>
                 <button class="boton-item">Agregar al carrito</button>
             </div>
             <div class="item">
-                <span class="título-item">Samsung Galaxy s22</span>
+                <span class="título-item">Samsung Galaxy S22</span>
                 <img src="./assets/img/samsungs22.jpg" alt="" class="img-item">
                 <span class="precio-item">$143.000</span>
                 <button class="boton-item">Agregar al carrito</button>
             </div>
             <div class="item">
-                <span class="título-item">Samsung Galaxy s23</span>
+                <span class="título-item">Samsung Galaxy S23</span>
                 <img src="./assets/img/s23.jpg" alt="" class="img-item">
                 <span class="precio-item">$160.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="título-item">Samsung Galaxy A33</span>
+                <img src="./assets/img/samsunga33.jpg" alt="" class="img-item">
+                <span class="precio-item">$88.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="título-item">Samsung Galaxy A34</span>
+                <img src="./assets/img/samsunga34_1.jpg" alt="" class="img-item">
+                <span class="precio-item">$92.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="título-item">Samsung Galaxy A52</span>
+                <img src="./assets/img/samsunga52.jpg" alt="" class="img-item">
+                <span class="precio-item">100.000</span>
                 <button class="boton-item">Agregar al carrito</button>
             </div>
             <div class="item">
@@ -49,12 +69,59 @@
                 <button class="boton-item">Agregar al carrito</button>
             </div>
             <div class="item">
+                <span class="título-item">Smart 85</span>
+                <img src="./assets/img/smart85.jpg" alt="" class="img-item">
+                <span class="precio-item">$150.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
                 <span class="título-item">Barra de sonido Samsung</span>
                 <img src="./assets/img/barradesonido.jpg" alt="" class="img-item">
                 <span class="precio-item">$90.000</span>
                 <button class="boton-item">Agregar al carrito</button>
             </div>
-
+            <div class="item">
+                <span class="título-item">Audífonos Samsung</span>
+                <img src="./assets/img/audífonos.jpg" alt="" class="img-item">
+                <span class="precio-item">$55.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
     </section>
+   <!-- contenedor de los elementos-->
+<div class="carrito" id="carrito" name="carrito">
+    <div class="header-carrito">
+        <h2>TU CARRITO</h2>
+    </div>
+
+    <div class="carrito-items">
+        <div class="carrito-item" id="carrito-item-S20" name="carrito-item-S20">
+            <img src="./assets/img/carrito-de-compras.png" alt="" width="80px">
+            <div class="carrito-item-detalles">
+                <span class="carrito-item-título"></span>
+                <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad" id="restar-S20" name="restar-S20"></i>
+                    <input type="number" value="1" class="carrito-item-cantidad" id="cantidad-S20" name="cantidad-S20" disabled>
+                    <i class="fa-solid fa-plus sumar-cantidad" id="sumar-S20" name="sumar-S20"></i>
+                </div>
+                <span class="carrito-item-precio">$0</span>
+            </div>
+            <span class="btn-eliminar" id="eliminar-S20" name="eliminar-S20">
+                <i class="fa-solid fa-trash"></i>
+            </span>
+        </div>
+        
+    </div>
+
+    <div class="carrito-total">
+        <div class="fila">
+            <strong>TOTAL</strong>
+            <span class="carrito-precio-total" id="precio-total" name="precio-total">
+                $0
+            </span>
+        </div>
+        <button class="btn-pagar" id="btn-pagar" name="btn-pagar">PAGAR <i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+</div>
+<script src="app3.js"></script>
 </body>
 </html>
