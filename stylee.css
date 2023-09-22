@@ -92,7 +92,7 @@ header h1{
     right: 1%;
     width: 380px;
     max-height: 70%; 
-    background-color: #fbf6f64f; 
+    background-color: #e3dada4f; 
     border-radius: 10px;
     overflow-y: auto; 
     z-index: 999;
@@ -199,3 +199,4 @@ header h1{
 .carrito-total .btn-pagar:hover{
     scale: 1.05;
 }
+
